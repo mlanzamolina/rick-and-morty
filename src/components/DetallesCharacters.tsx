@@ -1,7 +1,11 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useHistory } from 'react-router-dom';
 import React, {useState,useEffect} from "react";
 
 const DetallesCharacters = () => {
+  const history = useHistory();
+ function homeHandle(){
+history.pushState("/home");
+  }
     const { id } = useParams()
     const [episode,setEpisode]=useState<any[]>([]);
       const [character,setCharacter]=useState({
@@ -59,7 +63,7 @@ const DetallesCharacters = () => {
     {episode.map((item, index) => {
               return (
                 
-            <tr className={index%2?"table-info":"table-primary"}>
+            <tr className={index%2?"table-danger":"table-warning"}>
             <td>{ index+1 }</td>
             <td>{ item.name }</td>
             <td>{ item.air_date }</td>
@@ -71,13 +75,9 @@ const DetallesCharacters = () => {
     </tbody>
   </table>
   <div className="btn">
-  <button id="btn-1"><Link to="/">prev</Link></button>
+  <button id="btn-1" onClick={() => { history.push('/') }}>Home</button>
   </div>
   </div>
-    
-
-
-<Link to="/">home Salir de character = { id }</Link>
 </div>
 
     );

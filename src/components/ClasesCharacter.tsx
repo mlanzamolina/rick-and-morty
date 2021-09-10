@@ -6,7 +6,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useHistory 
 } from "react-router-dom";
 import { render } from "@testing-library/react";
 
@@ -63,7 +64,7 @@ export default function ClasesCharacter(){
       {character.results.map((item, index) => {
         return (
      
-            <tr className={index%2?"table-info":"table-primary"}>
+            <tr className={index%2?"table-primary":"table-info"}>
               <td >{item.id}</td>
          
               <td ><Link to={`/DetallesCharacters/${item.id}`}>
