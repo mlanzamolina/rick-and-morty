@@ -1,7 +1,5 @@
-
 .App {
   text-align: center;
-  
 }
 
 .App-logo {
@@ -24,7 +22,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  
 }
 
 .App-link {
@@ -39,57 +36,71 @@
     transform: rotate(360deg);
   }
 }
-#btn-1{
-	position: fixed;
+#btn-1 {
+  position: fixed;
   padding: 50px;
-	bottom: 0;
-    left: 0;
-	text-align:center;
-	text-transform:uppercase;
-	font-size:20px;
-	color:yellow;
-	background:linear-gradient(45deg,black,transparent);
-	border:1px solid black;
-	border-square:50px;
-	box-shadow:0px 0px 5px 10px green ;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-						}
-
-#btn-1:hover{color:green;cursor:pointer;border-radius:50px;box-shadow:0px 0px 5px 10px yellow;}
-
-#btn-2{
-	position: fixed;
-  padding: 50px;
-	bottom: 0;
-    right: 0;
-	text-align:center;
-	text-transform:uppercase;
-	font-size:20px;
-	color:yellow;
-	background:linear-gradient(45deg,black,transparent);
-	border:1px solid black;
-	border-square:50px;
-	box-shadow:0px 0px 5px 10px green;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
-				               }
-
-#btn-2:hover{
-	color:green;cursor:pointer;border-radius:50px;box-shadow:0px 0px 5px 10px yellow;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: yellow;
+  background: linear-gradient(45deg, black, transparent);
+  border: 1px solid black;
+  border-square: 50px;
+  box-shadow: 0px 0px 5px 10px green;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
-body, h1, h2, h3, h4, h5, h6 {
+
+#btn-1:hover {
+  color: green;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 10px yellow;
+}
+
+#btn-2 {
+  position: fixed;
+  padding: 50px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: yellow;
+  background: linear-gradient(45deg, black, transparent);
+  border: 1px solid black;
+  border-square: 50px;
+  box-shadow: 0px 0px 5px 10px green;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#btn-2:hover {
+  color: green;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 10px yellow;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 20px;
 }
-h1{
+h1 {
   text-align: center;
   color: white;
-  font-size:40px;
+  font-size: 40px;
   background-color: black;
 }
-.container{
+.container {
   background-color: transparent;
 }
-.DetallesCharacters{
-  border-radius: .5em;
-  padding:200px;
+.DetallesCharacters {
+  border-radius: 0.5em;
+  padding: 200px;
 }
